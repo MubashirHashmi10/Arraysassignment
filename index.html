@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. Declare an empty array using JS literal notation to store student names in the future.
+    let studentNamesLiteral = [];
+    console.log("1. Empty array using JS literal notation:", studentNamesLiteral);
+    document.write("<p>1. Empty array using JS literal notation: " + studentNamesLiteral + "</p>");
+
+    // 2. Declare an empty array using JS object notation to store student names in the future.
+    let studentNamesObject = new Array();
+    console.log("2. Empty array using JS object notation:", studentNamesObject);
+    document.write("<p>2. Empty array using JS object notation: " + studentNamesObject + "</p>");
+
+    // 3. Declare and initialize a strings array.
+    let stringsArray = ["apple", "banana", "cherry"];
+    console.log("3. Strings array:", stringsArray);
+    document.write("<p>3. Strings array: " + stringsArray.join(", ") + "</p>");
+
+    // 4. Declare and initialize a numbers array.
+    let numbersArray = [1, 2, 3, 4, 5];
+    console.log("4. Numbers array:", numbersArray);
+    document.write("<p>4. Numbers array: " + numbersArray.join(", ") + "</p>");
+
+    // 5. Declare and initialize a boolean array.
+    let booleanArray = [true, false, true];
+    console.log("5. Boolean array:", booleanArray);
+    document.write("<p>5. Boolean array: " + booleanArray.join(", ") + "</p>");
+
+    // 6. Declare and initialize a mixed array.
+    let mixedArray = ["apple", 123, true, "orange", false];
+    console.log("6. Mixed array:", mixedArray);
+    document.write("<p>6. Mixed array: " + mixedArray.join(", ") + "</p>");
+
+    // 7. Declare and Initialize an array and store available education qualifications in Pakistan.
+    let educationQualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+    console.log("7. Education Qualifications in Pakistan:", educationQualifications);
+    document.write("<p>7. Education Qualifications in Pakistan: " + educationQualifications.join(", ") + "</p>");
+
+        //color assignment
+        let colors = ["black", "red", "green",]
+        document.write(colors, "<br>")
+        UserBcolor = prompt("Enter your color to add in the beginning")
+        colors.unshift(UserBcolor)
+        document.write(colors, "<br>")
+        userEcolor = prompt("Enter your color to add at the end")
+        colors.push(userEcolor)
+        document.write(colors + "<br>")
+        colors.unshift("Yellow", "White")
+        document.write(colors, "<br>")
+        colors.shift()
+        document.write(colors, "<br>")
+        colors.pop()
+        document.write(colors, "<br>")
+        userColorfrind = prompt("Enter your color to add it in your desired index")
+        userInd = prompt("Enter your index where you want to add color")
+        colors.splice(userInd, 0, userColorfrind)
+        document.write(colors, "<br>")
+        userDind = prompt("Enter your index where you want to start deleting from")
+        userDlength = prompt("Enter your length")
+        colors.splice(userDind, userDlength)
+        document.write(colors, "<br> <br>")
+        let scoresOfstudents = [320, 230, 480, 120]
+        document.write(scoresOfstudents, "<br>")
+        scoresOfstudents.sort()
+        document.write(scoresOfstudents + "<br>")
+        let cities = ["Karachi", "Hyderabad", "Nawabshah", "Multan", "Peshawar"]
+        document.write(cities + "<br>")
+        let slectedCities = cities.slice(1, 3)
+        document.write(slectedCities, "<br>")
+        var arr = ["This", "is", "my", "cat"];
+        document.write(arr, "<br>")
+        let Jmeth = arr.join(" ")
+        document.write(Jmeth, "<br>")
+        // Create an empty array to serve as the FIFO queue
+        let fifoArray = [];
+
+        // Function to add a value to the end of the queue
+        function enqueue(value) {
+            fifoArray.push(value);
+        }
+
+        // Function to remove and return the value from the front of the queue
+        function dequeue() {
+            return fifoArray.shift();
+        }
+
+        // Example usage
+        enqueue(1);
+        enqueue(2);
+        enqueue(3);
+
+        console.log(dequeue()); // Output: 1
+        console.log(dequeue()); // Output: 2
+        // Create an empty array
+        let lifoArray = [];
+
+        // Store values in reverse order
+        lifoArray.push(1);
+        lifoArray.push(2);
+        lifoArray.push(3);
+
+        // Access values in reverse order
+        console.log(lifoArray.pop()); // Output: 3
+        console.log(lifoArray.pop()); // Output: 2
+        console.log(lifoArray.pop()); // Output: 1
+
+        // Array of phone manufacturers
+        let phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+        // Output HTML code for the dropdown/select menu
+        document.write('<select id="manufacturerDropdown">');
+
+        // Loop through the array to create options for the dropdown
+        for (let i = 0; i < phoneManufacturers.length; i++) {
+            document.write('<option value="' + phoneManufacturers[i] + '">' + phoneManufacturers[i] + '</option>');
+        }
+
+        document.write('</select>');
+
+
+    </script>
+</body>
+
+</html>
